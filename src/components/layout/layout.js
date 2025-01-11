@@ -9,7 +9,7 @@ class Layout extends Component {
       return (
         <div class="layout-container">
             <div class="container">
-                <div><img src={MDCLOGO} alt="MDCLOGO"/></div>
+                <div class="logo-container"><img src={MDCLOGO} alt="MDCLOGO"/></div>
                 <ul>
                     <li>Solar</li>
                     <li>Battery Bank</li>
@@ -36,7 +36,7 @@ class Layout extends Component {
                 </div>
             </div>
             <div class="container">
-                <img src={ROALOGO} alt="ROALOGO"/>
+               <div class="logo-container"> <img src={ROALOGO} alt="ROALOGO"/></div>
                 <ul>
                     <li>This upgrade</li>
                     <li>This upgrade</li>

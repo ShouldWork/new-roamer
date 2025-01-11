@@ -1,7 +1,7 @@
 body {
   display: grid;
   place-items: center;
-  font-family: system-ui, sans-serif;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: clamp(1rem, 0.6rem + 1.125cqi, 1.125rem);
   line-height: 1.5;
   /* padding: 2rem; */
