@@ -85,6 +85,11 @@
     margin: auto;
     transform: translate(0, 5%);
     box-shadow: 15px 0px 15px black;
+    overflow: hidden;
+    /* border:1px solid purple;  */
+    position: relative;
+    border-radius: 20px;
+    
 }
 
 .react-player {
@@ -93,7 +98,8 @@
     left: 0;
     bottom: 0;
     right: 0;
-    border-radius: 5px;;
+    /* border-radius: 5px; */
+    /* padding: 10px;  */
   }
 
 .logo-container {
