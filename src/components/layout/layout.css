@@ -3,7 +3,7 @@
 }
 
 :root {
-  color-scheme: light dark;
+  color-scheme: dark;
   
   --h: 330;
   --s: 88%;
@@ -28,12 +28,14 @@
     color: var(--brand-color-fg);
   }
   
+
+
 .layout-container {
     display: grid;
     grid-template-columns: .75fr 1.5fr .75fr;
     min-width: 100vw;
     min-height: 100vh;
-    padding: var(--space);
+    /* padding: var(--space); */
     background-image: var(--gradient);
 }
 
@@ -56,6 +58,7 @@
     flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
+    overflow: hidden;
 }
 
 .container:nth-child(2){
@@ -63,9 +66,17 @@
     /* border-bottom: 2px solid hsl(var(--h), var(--s), var(--l), 0.28); */
     display: flex; 
     flex-wrap: wrap;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    margin: 50px 20px 50px 20px;
+    justify-content: center;
+    /* margin: 50px 20px 50px 20px; */
+    overflow: hidden;
+}
+
+h2 {
+  margin: 0;
+  letter-spacing: var(--letter-spacing);
+  padding: 0;
 }
 .container:last-child{
     /* border-right: 2px solid hsl(var(--h), var(--s), var(--l), 0.8); */
@@ -75,23 +86,34 @@
     flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
-
+    overflow: hidden;
 }
 
+
 .broll {
-    height: 50%;
+    /* height: 50%;
     width: 70%;
-    /* box-shadow: 0 1px 10px lightblue; */
+    box-shadow: 0 1px 10px lightblue;
     margin: auto;
     transform: translate(0, 5%);
     box-shadow: 15px 0px 15px black;
     overflow: hidden;
-    /* border:1px solid purple;  */
+    border:1px solid purple; 
     position: relative;
-    border-radius: 20px;
-    
+    */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: flex-end;
+    /* height: 600px;    */
 }
 
+img {
+  display: block; 
+  max-width: 100%;
+  height: auto; 
+}
 .react-player {
     position: absolute;
     top: 0;
@@ -111,11 +133,19 @@
   /* border: 1px solid var(--shadow-color); */
 }
 
+.logo-container img {
+  height: 100%; 
+  width: 100%;
+  border-radius: 0;
+}
+
   img {
     /* max-width: 50%; */
     height: auto;
     padding: 0;
     margin: 0;
+    box-shadow: 15px 0px 15px black;
+    border-radius: 20px; 
   }
 
   ul {
@@ -135,8 +165,9 @@
   }
 
   .roamer-name {
-    font-size: xx-large;
+    font-size: 2em;
     letter-spacing: var(--letter-spacing);
+    
   }
 /* @media (prefers-color-scheme: dark) {
   :root {
