@@ -12,10 +12,11 @@
   --brand-color-fg: hsl(0 0% 99%);
   --border: 1px solid var(--brand-color-bg);
   --letter-spacing: .25cap;
-  --shadow-blur: 1.5rem;
-  --shadow-color: hsla(var(--h) var(--s) var(--l) / 0.6);
-  --shadow-y: 1rem;
-  ---shadow-y: calc(var(--shadow-y) * -1);
+  --shadow-blur: 1rem;
+  /* --shadow-color: hsla(var(--h) var(--s) var(--l) / 0.6); */
+  --shadow-color: black;
+  --shadow-y: .5rem;
+  ---shadow-y: calc(var(--shadow-y) * .1);
   --space: clamp(1.125rem, 0.8rem + 1.3cqi, 1.875rem);
   --gradient: linear-gradient(
     165deg,
@@ -44,6 +45,25 @@
     padding: var(--space);
 }
 
+.welcome {
+  margin: 20px;
+  background-color: rgba(0,0,0,.5);
+  padding: 10px;
+  height: 200px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  
+  /* border-radius: 20px; */
+}
+
+.welcome h1, .welcome h3{
+  font-size: 3em;
+  font-weight: 100;
+}
+
 .container h1, .container h2{
     padding: var(--space);
     text-align: center;
@@ -67,7 +87,7 @@
     display: flex; 
     flex-wrap: wrap;
     flex-direction: row;
-    align-items: center;
+    /* align-items: center; */
     justify-content: center;
     /* margin: 50px 20px 50px 20px; */
     overflow: hidden;
@@ -101,7 +121,10 @@ h2 {
     border:1px solid purple; 
     position: relative;
     */
-
+    position: absolute;
+    width: 700px;
+    top: 30px;
+    z-index: -1;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -144,8 +167,8 @@ img {
     height: auto;
     padding: 0;
     margin: 0;
-    box-shadow: 15px 0px 15px black;
-    border-radius: 20px; 
+    box-shadow: var(--shadow-y) var(---shadow-y) var(--shadow-blur) var(--shadow-color);
+    /* border-radius: 20px;  */
   }
 
   ul {
@@ -156,12 +179,13 @@ img {
   li {
     list-style: none;
     margin-top: var(--space);
-    padding: var(--space);
-    box-shadow: 5px 5px 15px black;
+    padding: 15px 10px;
+    box-shadow: var(--shadow-y) var(---shadow-y) var(--shadow-blur) var(--shadow-color);
     /* border-bottom: 3px solid white; */
     letter-spacing: var(--letter-spacing);
     text-align: center;
     border-radius: 5px;
+    /* background-color: rgba(25,25,250,.5); */
   }
 
   .roamer-name {

@@ -21,7 +21,7 @@ class Layout extends Component {
                 </ul>
             </div>
             <div class="container">
-                <div>
+                <div className='welcome'> 
                     <h1 style={{marginBottom: 0, paddingBottom:0}}>Welcome our new Roamer!</h1>
                     <h3 style={{textAlign: "center", margin: 0, fontSize:"smaller",color:"rgba(255,255,255,.8)"}}>Together we inspire others to achieve extraordinary excellence through belief, change, and progress!</h3>
                 </div>
