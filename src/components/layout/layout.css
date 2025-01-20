@@ -26,7 +26,8 @@
   }
   
   body {
-    color: var(--brand-color-fg);
+    /* color: var(--brand-color-fg); */
+    background-color: black;
   }
   
 
@@ -136,6 +137,7 @@ img {
   display: block; 
   max-width: 100%;
   height: auto; 
+  border-radius: 15px;
 }
 .react-player {
     position: absolute;
@@ -185,12 +187,17 @@ img {
     letter-spacing: var(--letter-spacing);
     text-align: center;
     border-radius: 5px;
-    /* background-color: rgba(25,25,250,.5); */
+    background-color: rgb(170,150,100);
+    color: black;
+
   }
 
   .roamer-name {
+    margin: 20px;
+    background-color: rgba(170,150,100,.75);
     font-size: 2em;
     letter-spacing: var(--letter-spacing);
+    height:300px;
     
   }
 /* @media (prefers-color-scheme: dark) {
