@@ -1,24 +1,56 @@
 import './new-roamer.css';
-import * as Logos from "../components/assests/logos";
+import { useState } from 'react';
 
-const LogosA = Object.keys(Logos);
-console.log(LogosA);
-// import Layout from './components/layout/layout';
 function NewRoamer() {
+  const [inputs, setInputs] = useState("");
+
+  const handleChange = (event) => {
+    const name = event.target.name;
+    const value = event.target.value;
+    setInputs(values => ({
+        ...values, [name]: value
+    }))
+  }
+  
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    console.log(inputs)
+    alert(`Welcome our new Roamer ${inputs.name}! \nIn the brand new ${inputs.trailer}!`)
+  }
+
   return (
     <div className='layout'>
         <div className='sideBar_layout'>
-            <div>
-            </div>
+            <ul>
+                <li>Roamer Name</li>
+                <li>Trailer</li>
+                <li>Upgrades</li>
+            </ul>
         </div>
-        <div className='content_layout'>
-                <img src={Logos.MDCLOGO} alt="MDCLOGO"></img>
-                <img src={Logos.RebootLogo} alt="Reboot Logo"></img>
-            <div className='content-container'>
-                <label>Test
-                    <input />
-                </label>
+        <div className='content-container'>
+            <div>
+                <p>{inputs.name}</p>
+                <p>{inputs.trailer}</p>
             </div>
+            <form className='newRoamer-form' onSubmit={handleSubmit}>
+                <label>
+                    Name:
+                    <input 
+                        type="text" 
+                        name="name"
+                        onChange={handleChange} 
+                    />
+                </label>
+                <label>
+                    Trailer:
+                    <input 
+                        type="text" 
+                        name="trailer"
+                        onChange={handleChange} 
+                    />
+                </label>
+                <button onClick={handleSubmit}>Save</button>
+            </form>
         </div>
     </div>
   );

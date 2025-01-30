@@ -57,3 +57,21 @@
     box-shadow: 2px 15px 15px black;
     padding: 12em;
 }
+
+.newRoamer-form{
+    border: 1px solid white; 
+    padding: var(--space);
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+}
+
+.newRoamer-form input{
+    padding: 12px;
+    margin: 0 0 35px 10px;
+    border: none;
+    border-bottom: 1px solid white;
+    border-radius: 1%;
+    background-color: transparent;
+    color: salmon;
+}

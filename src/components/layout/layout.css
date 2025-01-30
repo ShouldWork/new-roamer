@@ -28,6 +28,10 @@
   body {
     /* color: var(--brand-color-fg); */
     background-color: black;
+    background-image: url('https://www.rvsofamerica.com/wp-content/uploads/2024/02/1B9A0749.jpeg');
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
   }
   
 
@@ -47,14 +51,13 @@
 }
 
 .welcome {
-  margin: 20px;
+  /* margin: 20px; */
   background-color: rgba(0,0,0,.5);
   padding: 10px;
-  height: 200px;
   position: relative;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-start;
+  justify-content: space-around;
   flex-direction: column;
   
   /* border-radius: 20px; */
@@ -88,8 +91,8 @@
     display: flex; 
     flex-wrap: wrap;
     flex-direction: row;
-    /* align-items: center; */
-    justify-content: center;
+    align-items: flex-start;
+    justify-content: space-evenly;
     /* margin: 50px 20px 50px 20px; */
     overflow: hidden;
 }
@@ -193,12 +196,11 @@ img {
   }
 
   .roamer-name {
-    margin: 20px;
-    background-color: rgba(170,150,100,.75);
+    background-color: rgba(170,150,100,.95);
     font-size: 2em;
     letter-spacing: var(--letter-spacing);
-    height:300px;
-    
+    padding: var(--space);
+    box-shadow: var(--shadow-y) var(---shadow-y) var(--shadow-blur) var(--shadow-color);
   }
 /* @media (prefers-color-scheme: dark) {
   :root {

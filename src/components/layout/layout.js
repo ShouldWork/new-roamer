@@ -13,7 +13,7 @@ class Layout extends Component {
             <SidebarHome />
             <div className="container">
                 <div className='welcome'> 
-                    <h1 style={{marginBottom: 0, paddingBottom:0}}>Welcome our new Roamer!</h1>
+                    <h1 style={{margin: 0, paddingBottom:0}}>Welcome our new Roamer!</h1>
                     <h3 style={{textAlign: "center", margin: 0, fontSize:"smaller",color:"rgba(255,255,255,.8)"}}>Together we inspire others to achieve extraordinary excellence through belief, change, and progress!</h3>
                 </div>
                 <div className='roamer-name'>
@@ -22,7 +22,7 @@ class Layout extends Component {
                 </div>
                 <div className="broll">
                     <div className='player-wrapper'>
-                        <img src='https://www.rvsofamerica.com/wp-content/uploads/2024/02/1B9A0749.jpeg'></img>
+                        {/* <img src='https://www.rvsofamerica.com/wp-content/uploads/2024/02/1B9A0749.jpeg'></img> */}
                         {/* <ReactPlayer
                             className='react-player'
                             url='https://www.youtube.com/watch?v=j7FPy64KYq4'
@@ -33,7 +33,7 @@ class Layout extends Component {
                 </div>
             </div>
             <div className="container">
-               <div className="logo-container"> <img src={ROALOGO} alt="ROALOGO"/></div>
+               <div class="logo-container"> <img src={ROALOGO} alt="ROALOGO"/></div>
                 <ul>
                     <li>Starlink Installation</li>
                     <li>Outdoor Kitchen</li>
